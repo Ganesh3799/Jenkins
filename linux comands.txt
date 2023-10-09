@@ -1,0 +1,217 @@
+-yim httpd sudo-i
+yum install httpd -y
+systemctl start httpd 
+
+
+instance
+with keypair
+public key(Instance)
+private key(inside system)
+
+if we create an instance with key pair, we can conect ou
+
+
+console
+terminal 
+1 putty  
+2 mobaxtrem
+
+types of keypair
+.pem
+iD-RSA supports all OS
+ED25519 - not support windows
+
+.ppk( putty private key)
+.pem(privacy enhanced mail) putty will not support
+.pem file can convert into .ppk and can connect in putty 
+
+
+linux
+Operating system with higher security
+
+
+OS ia a software that acts as an interface between computer hardware components and the user
+
+
+kernel
+daemons
+shell
+
+
+
+Linux os distribution
+
+most applications running on linux severs
+
+CLI Command ine Interface
+GUI graphical user interface
+
+
+linux commands
+Types
+1.system commands
+2.hardware commands
+3.network commands
+4.file commands
+5.search commands
+6.user commands
+7.permission commands
+
+System Commands
+sudo -i : to change ec2 user to root
+exit
+uname : used to get OS of our instance
+uname -r: used to get kernel version of OS
+uname -a : used to get full information of OS
+uptime : used to get since how long our server is in running state
+uptime -p : it displays only time
+uptime -s : it displays about date and time of our system
+CTRL L clear screen
+hostname : used to get hostname of the system
+hostname -i : used to private ip address of a system
+ip addr : used to private ip address of system
+ip route : used to private ip address of system
+ifconfig : used to private ip address of system
+hostnamectl set
+hostname -i
+ip addr
+ip route
+
+
+
+
+Hardware commands
+cat uptim/proc/cpuinfo
+lscpu
+cat/proc/meminfo
+free : used to get ram info in kb
+free -m
+
+df-h :catfc
+
+cat /proc/cpuinfo : used to get cpuinfo 
+cat ------> is a linux command which is used the read the data in a file
+/proc ---> it a directory which contains processor of our system
+cpuinfo -----> it a file which contains cpu info 
+lscpu : used to get cpuinfo 
+cat /proc/meminfo : used to get RAM info about our system
+free : used to get RAM info in KB
+free -m : used to get RAM info in MB
+df -h : used to get storage info about our system
+fdisk -l : used to get list volumes attached to our system
+ 
+
+
+mounting topic  EBS
+
+
+
+
+16/09/23
+File Commands
+touch - to create a file
+ll(long list) = to check the files created : give full info about file
+ls(short list) : give info names of files
+regular file is called containing text based data
+
+Command for creating multiple files
+touch aws azure gcp
+Command for creating multiple files
+touch filename{1..7}
+touch devops{1..5}
+
+ll -a : to view all files including hidden files(starting with .filename) ex : .devops
+ll -r : to view files in reverse alphabetical order
+ll -t : to show th latest file created by order (time based)
+ll -ltr : to show 
+To Remove files
+rm - remove command
+rm filename : to delete files with permission
+for multiple files with permission rm aws azure gcp
+
+rm -f filename : to delete files without permission
+eg rm -f file1 file2
+
+rm -f * : to remove all file
+rm -f a* : to remove the files started with a
+rm -f *.txt : to remove all the texdt files
+
+Directories(folders)
+regular files start with - (1 data access control)
+directories start with d 2
+mkdir make directory
+mkdir filename
+mkdir aws azure gcp
+to remove directories
+rmdir filename
+ rmdir folder{1..5} : 
+to remove all empty directories in sequential order
+rmdir * : to remove all directories
+
+to insert data into file
+touch aws
+ll
+cat aws : to read the data in the file
+cat>aws : to insert data
+I am a cloud aws
+available everywhere
+
+cat>>aws : to append more data
+Ctrl+D : save the data
+
+when we try to add data file use > in existing data file, the data will be overrided.
+
+to modify the existing data, vim editor, nano editor will be used
+
+
+For Console
+to paste the data = ctrl+shift+V
+Shift+insert
+
+for putty
+copy : select
+paste : right click
+
+cat -n filename : to print data in file with line numbers
+head filename : to print top lines
+tail filename : to print last 10 lines
+sed -n '5,17p' filename
+tac filename : to print data in reverse order
+rev
+
+
+19/09/2023
+f tab-shortcut
+
+
+20/09/2023
+COMMAND MODE
+INSERT MODE
+SAVE & QUIT
+
+
+
+rm -rf *
+
+cp folder1/* folder 2
+
+
+cat aws.txt | tee aws2.txt aws3.txt aws4.txt 
+
+echo folder{2..7} | xargs -n 1 cp  -v folder1/*
+
+
+
+ctrl + U - to delete the command
+ctrl + A - starting of the command
+ctrl + E - ending of command
+history
+!command
+
+
+
+21/09/23
+to delete a user with directory : userdel -r username(r means recursive)
+
+updatedb
+locate filename
